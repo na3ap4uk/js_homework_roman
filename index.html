@@ -7,17 +7,51 @@
         <meta charset= 'utf-8'/>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+        <script src="query/query.js">
+        </script>
     </head>
     <body>
-        <div id='newForm'>
+        <div class='wraper'>
+            <div class='setValueFields'>
+                <p>
+                    Final countdown:
+                </p>
+                <p>
+                    Days:
+                    <input class='setDayValue' type='text' size=2/>
+                    Hours:
+                    <input class='setHourValue' type='text' size=2/>
+                    Minutes:
+                    <input class='setMinValue' type='text' size=2/>
+                    Seconds:
+                    <input class='setSecValue' type='text' size=2/>
+                </p>
+                <input id ='submit' type='submit' value='CTAPT'/>
+            </p>
         </div>
-        <button>
-            Refresh
-        </button>
-        <div id="page">
-            ...
+        <div class='timerSection'>
+            <p class='timer'>
+                <span class="dayContainer">
+                    00
+                </span>
+                :
+                <span class="hourContainer">
+                    00
+                </span>
+                :
+                <span class="minContainer">
+                    00
+                </span>
+                :
+                <span class="secContainer">
+                    00
+                </span>
+            </p>
         </div>
-        <script src='js/app.js'>
-        </script>
-    </body>
+    </div>
+    <script src='js/jquery.js'>
+    </script>
+    <script src='js/timer.js'>
+    </script>
+</body>
 </html>
